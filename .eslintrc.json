@@ -1,0 +1,11 @@
+{
+  "extends": ["next/core-web-vitals", "next", "eslint:recommended", "plugin:react/recommended"],
+  "globals": {
+    // We'll use prettier to format our code
+    "React": "readonly"
+  },
+  "rules": {
+    // If you have an unused variable that starts with an underscore, ignore it
+    "no-unused-vars": [1, {"args":  "after-used", "argsIgnorePattern": "^_"}]
+  }
+}
