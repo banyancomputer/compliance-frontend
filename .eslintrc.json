@@ -1,9 +1,17 @@
 {
-  "extends": ["next/core-web-vitals", "next", "eslint:recommended"],
+  "extends": ["next/core-web-vitals", "next", "eslint:recommended", "plugin:storybook/recommended"],
   "globals": {
     // We'll use prettier to format our code
     "React": "readonly"
   },
+  "overrides": [
+    {
+      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+      "rules": {
+        "storybook/heirarchy-seperator": "error"
+      }
+    }
+  ],
   "rules": {
     // If you have an unused variable that starts with an underscore, ignore it
     "no-unused-vars": [
