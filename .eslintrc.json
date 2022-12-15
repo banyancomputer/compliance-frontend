@@ -1,15 +1,17 @@
 {
-  "extends": ["next/core-web-vitals", "next", "eslint:recommended", "plugin:storybook/recommended"],
+  "extends": [
+    "next/core-web-vitals",
+    "next",
+    "eslint:recommended",
+    "plugin:storybook/recommended"
+  ],
   "globals": {
     // We'll use prettier to format our code
     "React": "readonly"
   },
   "overrides": [
     {
-      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
-      "rules": {
-        "storybook/heirarchy-seperator": "error"
-      }
+      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"]
     }
   ],
   "rules": {
